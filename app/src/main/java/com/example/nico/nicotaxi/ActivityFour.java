@@ -8,22 +8,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class ActivityFour extends MainActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_four);
 
-        Button btnActTwo = (Button) findViewById(R.id.btnActTwo);
+        Button btnActTwo = (Button) findViewById(R.id.btnActFife);
         btnActTwo.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnActTwo:
-                Intent intent = new Intent(this, ActivityTwo.class);
+            case R.id.btnActFife:
+                Intent intent = new Intent(this, ActivityFife.class);
                 startActivity(intent);
                 break;
             default:
@@ -52,5 +52,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }
-
 }
