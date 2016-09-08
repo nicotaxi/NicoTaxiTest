@@ -7,6 +7,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/goBtn_text3"
-            android:id="@+id/btnActFour" android:layout_gravity="center_horizontal" android:layout_weight="0.03">
+            android:id="@+id/btnAct"
+            android:layout_gravity="center_horizontal" android:layout_weight="0.03">
     </Button>
 </LinearLayout>

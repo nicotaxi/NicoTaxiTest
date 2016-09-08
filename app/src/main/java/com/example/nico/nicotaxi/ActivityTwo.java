@@ -14,14 +14,14 @@ public class ActivityTwo extends MainActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
 
-        Button btnActTwo = (Button) findViewById(R.id.btnActThree);
-        btnActTwo.setOnClickListener(this);
+        Button btnAct = (Button) findViewById(R.id.btnAct);
+        btnAct.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnActThree:
+            case R.id.btnAct:
                 Intent intent = new Intent(this, ActivityThree.class);
                 startActivity(intent);
                 break;
@@ -30,7 +30,7 @@ public class ActivityTwo extends MainActivity{
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -50,5 +50,5 @@ public class ActivityTwo extends MainActivity{
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
